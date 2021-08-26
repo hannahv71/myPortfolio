@@ -1,0 +1,80 @@
+/* variables */
+:root{
+    --hue-color: 150;
+
+    /* --bg-color: hsl(var(--hue-color), 60%, 95%); */
+    --bg-color: #fff;
+    --title-color: hsl(var(--hue-color), 15%, 24%);
+    --color-one: hsl(var(--hue-color), 69%, 61%);
+    --color-one-light: hsl(var(--hue-color), 90%, 85%);
+}
+
+/* setup */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+h1, h2, h3, h4{
+    color: var(--title-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav__menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .5s;
+}
+
+.nav__item{
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: .3s;
+}
+
+.nav__item:hover{
+    color: #f1f1f1
+}
+.nav__menu .nav__close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+    .nav__menu{
+        padding-top: 15px;
+    }
+
+    .nav__item{
+        font-size: 18px;
+    }
+}

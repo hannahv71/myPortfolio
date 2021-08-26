@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8">
 
+        <!-- unicons -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!-- css -->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Hannah Vaughn | Software Developer</title>
@@ -16,19 +20,32 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link"></a>
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About Me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Me</a>
                         </li>
                     </ul>
-                    <i class="" id="nav__close"></i>
+                    <i class="uil uil-times nav__close" id="nav__close" onclick="closeNav()"></i>
                 </div>
 
                 <div class="nav__btns">
                     <!-- light/dark toggle -->
-                    <i class="" id="theme-button"></i>
+                    <i class="uil uil-moon" id="theme-button"></i>
 
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class=""></i>
-                    </div>
+                    <!-- toggle menu -->
+                    <span class="nav__toggle" id="nav-toggle" onclick="openNav()">
+                        <i class="uil uil-bars"></i>
+                    </span>
                 </div>
             </nav>
         </header>
@@ -74,7 +91,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" href="" class="button">Download Resume<i class="button-icon"></i></a>
+                            <a download="" href="assets/pdf/HannahVaughn_Resume_Jun2021.pdf" class="button">Download Resume<i class="button-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -87,30 +104,6 @@
 
                 <div class="skills__container container">
                     <div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- qualification -->
-            <section class="qualification section">
-                <h2 class="section__title"></h2>
-                <span class="section__subtitle"></span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- services -->
-            <section class="services section" id="services">
-                <h2 class="section__title"></h2>
-                <span class="section__subtitle"></span>
-
-                <div class="services__container container">
-                    <div class="services__content">
 
                     </div>
                 </div>
@@ -138,7 +131,7 @@
 
                             <div>
                                 <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">678-373-2683</span>
+                                <a href="tel:678-373-2683" class="contact__subtitle">678-373-2683</a>
                             </div>
                         </div>
 
@@ -147,7 +140,7 @@
 
                             <div>
                                 <h3 class="contact__title">Email Me</h3>
-                                <span class="contact__subtitle">hannahv71@gmail.com</span>
+                                <a href="mailto:hannahv71@gmail.com" class="contact__subtitle">hannahv71@gmail.com</a>
                             </div>
                         </div>
 
